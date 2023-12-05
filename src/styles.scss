@@ -3,22 +3,27 @@
 @import "../node_modules/primeicons/primeicons.css";
 @import "../node_modules/primeflex/primeflex.css";
 
-.p-datatable .p-datatable-thead>tr>th {
-    background: none;
+.p-datatable .p-datatable-thead > tr > th {
+  background: none;
 }
 
-.p-datatable.p-datatable-hoverable-rows .p-datatable-tbody>tr:not(.p-highlight) {
-    cursor: pointer;
+.p-datatable.p-datatable-hoverable-rows
+  .p-datatable-tbody
+  > tr:not(.p-highlight) {
+  cursor: pointer;
 }
 
-
-p-chart>div {
-    position: relative;
-    min-height: 40vh;
+p-chart > div {
+  position: relative;
+  min-height: 40vh;
 }
 
 .card {
-    &.chart {
-        padding: 10px;
+  &.chart {
+    padding: 10px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
     }
+  }
 }
